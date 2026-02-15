@@ -1,0 +1,26 @@
+# Requested ignores
+node_modules/
+logs/
+*.log
+*.sqlite
+*.db
+cache/
+tmp/
+sessions/
+.env
+*.pem
+id_*
+*.key
+.DS_Store
+*.swp
+*.swo
+
+# Runtime/sensitive artifacts
+backup/
+completions/
+credentials/
+memory/
+openclaw.json*
+openclaw_src.tgz
+*.bak
+*.backup

@@ -1,0 +1,10 @@
+{
+  "name": "internet_explorer",
+  "description": "扫描 GitHub Trending，发现并评分热门 AI 项目",
+  "version": "2.0.0",
+  "triggers": ["扫描", "trending", "热门项目", "探索报告", "scout"],
+  "handler": {
+    "type": "exec",
+    "command": "python3 /home/admin/scout_v2.py"
+  }
+}

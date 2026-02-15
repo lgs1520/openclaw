@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "86ffac04-dddc-4263-9f74-3760cc19bc39",
+      "agentId": "main",
+      "name": "请给我发送探索报告。",
+      "enabled": true,
+      "createdAtMs": 1770729744041,
+      "updatedAtMs": 1771120836525,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请给我发送探索报告。"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771207200000,
+        "lastRunAtMs": 1771120800006,
+        "lastStatus": "ok",
+        "lastDurationMs": 36519
+      }
+    }
+  ]
+}

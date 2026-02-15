@@ -1,0 +1,10 @@
+{
+  "name": "test_explorer",
+  "description": "测试探索功能",
+  "version": "1.0.0",
+  "triggers": ["测试", "test"],
+  "handler": {
+    "type": "exec", 
+    "command": "echo 'Scout 测试成功！'"
+  }
+}

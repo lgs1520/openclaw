@@ -1,0 +1,11 @@
+{
+  "name": "camofox-openclaw-skill",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:m1": "node test-m1.js",
+    "test:m2": "node test-m2.js",
+    "test:m3": "node test-m3.js",
+    "test:m4": "node test-m4.js"
+  }
+}

@@ -1,0 +1,6 @@
+version: 1
+owners:
+  core: human
+  modules/trending-scan: human
+  modules/camofox: human
+  policies: human

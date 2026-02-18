@@ -1,0 +1,22 @@
+name: change-gate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run change gate
+        env:
+          HUMAN_APPROVED: ${{ vars.HUMAN_APPROVED || 'false' }}
+        run: |
+          bash automation/check-change-gate.sh \
+            "${{ github.event.pull_request.base.sha }}" \
+            "${{ github.event.pull_request.head.sha }}"

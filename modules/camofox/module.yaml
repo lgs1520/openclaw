@@ -1,0 +1,12 @@
+name: camofox
+owner: human
+version: 0.1.0
+entry: src/index.js
+contracts:
+  emits:
+    - browse.result.v1
+  consumes:
+    - browse.request.v1
+policies:
+  isolated: true
+  crossModuleChangeRequiresApproval: true

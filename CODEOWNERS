@@ -1,0 +1,4 @@
+# Replace @your-github-id with your real GitHub account
+/core/ @your-github-id
+/modules/ @your-github-id
+/policies/ @your-github-id

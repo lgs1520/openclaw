@@ -1,0 +1,14 @@
+version: 1
+rules:
+  cross_module_change:
+    require_human_approval: true
+    applies_when:
+      changed_modules_count_gt: 1
+  core_change:
+    require_human_approval: true
+    applies_when:
+      path_prefix: core/
+  runtime_data_change:
+    require_human_approval: false
+    applies_when:
+      path_prefix: runtime/

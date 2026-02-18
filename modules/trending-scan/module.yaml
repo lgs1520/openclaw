@@ -1,0 +1,11 @@
+name: trending-scan
+owner: human
+version: 0.1.0
+entry: src/index.js
+contracts:
+  emits:
+    - trending.report.v1
+  consumes: []
+policies:
+  isolated: true
+  crossModuleChangeRequiresApproval: true
